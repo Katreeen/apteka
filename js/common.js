@@ -1,3 +1,24 @@
+function increaseCount(a, b) {
+  var input = b.previousElementSibling;
+  var value = parseInt(input.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  input.value = value;
+}
+
+function decreaseCount(a, b) {
+  var input = b.nextElementSibling;
+  var value = parseInt(input.value, 10);
+  if (value > 1) {
+    value = isNaN(value) ? 0 : value;
+    value--;
+    input.value = value;
+  }
+}
+
+
+
+
 $(document).ready(function () {
 	$('.main_carousel').slick({
 		dots: true,
@@ -11,7 +32,7 @@ $(document).ready(function () {
 		slidesToShow: 1
 		//adaptiveHeight: true
 	});
-	
+  
 
 	
 
