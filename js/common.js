@@ -32,10 +32,60 @@ $(document).ready(function () {
 		slidesToShow: 1
 		//adaptiveHeight: true
 	});
-  
+  $('.navbar-toggler').click(function () {
+    $('.header_menu').slideToggle();
+  });
+  $('.promo_carousel').slick({
+		dots: false,
+    arrows: false,
+    centerMode: true,
+		infinite: true,
+		speed: 500,
+		cssEase: 'linear',
+    slidesToShow: 1,
+    responsive: [
+			{
+			  breakpoint: 991,
+			  settings: {
+          slidesToShow: 2,
+			  }
+			},
+			{
+			  breakpoint: 575,
+			  settings: {
+          slidesToShow: 1,
+				 
+			  }
+			}
+		 ]
+		//adaptiveHeight: true
+  });
+  $('.view_offers_carousel').slick({
+		dots: false,
+    arrows: false,
+    // centerMode: true,
+		infinite: false,
+		speed: 500,
+		cssEase: 'linear',
+    slidesToShow: 1,
+    variableWidth: true,
+    // variableHeight: true
+   
+	});
 
 	
+  $('.view_offers_pin .pin_off_icon').click(function () {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.pin_off_product').hide();
+    } else {
+      $('.view_offers_pin .pin_off_icon').removeClass('active');
+      $('.pin_off_product').hide();
+      $(this).addClass('active');
+      $(this).next('.pin_off_product').show();
+    }
 
+  });
 
 	$('.catalog_carousel').slick({
 		dots: false,
