@@ -939,6 +939,13 @@ button:focus, a:focus, img:focus {outline:none;}
 .header_phone{margin-top: 10px;justify-content: center;}
 .offer_item{margin-bottom: 20px; display: block;}
 .saleban_box{padding-bottom: 71px;background: #00A0E4;border-radius: 5px;}
+.footer_col_gpay{order:1}
+.footer_col_menu{order: 2;}
+.footer_col_contact{order:3}
+.footer_col_logo{order:4}
+.footer_row {text-align: center;}
+.footer_contact{margin: 20px auto;}
+
 }
 
 
