@@ -1123,6 +1123,7 @@ button:focus, a:focus, img:focus {outline:none;}
 .product_total_price{padding-top: 13px;}
 .card_info_btn_row{margin-top: 20px;}
 .section_card_related{padding-top: 48px;}
+.gpay_box{padding: 0;}
 }
 
 @media(max-width: 400px){
