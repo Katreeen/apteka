@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
   <link rel="stylesheet" href="css/common.css">
 </head>
-<body class="home">
+<body class="search">
   <div class="wrapper">
 		<header class="header">
       <div class="header_top">
@@ -193,388 +193,446 @@
       </div>
       <div class="main_content">
         <div class="container">
-          <div class="main_title">По запросу <b>"крем"</b> найдено 837 товаров</div>
-          <div class="search_list">
-            <div class="search_list_row row">
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <span class="sale">3%</span>
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product01.png" alt="">
+          <div class="section_page">
+            <div class="main_title">По запросу <b>"крем"</b> найдено 837 товаров</div>
+            <div class="product_filter_view">
+              <div class="product_filter_view_row">
+                <a href="/?view=tile" class="filter_view tile-icon"></a>
+                <a href="/?view=table" class="filter_view table-icon active"></a>
+              </div>
+            </div>
+            <div class="product_filter_sort">
+                <div class="product_filter_sort_row">
+                  <div class="product_filter_sort_text">
+                    Сортировка
+                  </div>
+                  <div class="product_filter_sort_select">
+                    <select name="product_sort" id="product_sort">
+                      <option value="name" selected="selected" data-sort="name">По наименованию</option>
+                      <option value="insale" data-sort="insale">Со скидкой</option>
+                      <option value="price" data-sort="price">По цене</option>
+                    </select>
+                  </div>
+              </div>
+            </div>
+            <div class="search_list">
+              <div class="search_list_row row">
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
                       </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
+                      <div class="product_item_left">
                       </div>
                     </div>
-                    <div class="product_item_left">
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
                     </div>
-                  </div>
-                  <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Галант Косметик-М ООО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">213.20 ₽</div>
-                        <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span>
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">213.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
                       </div>
                     </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
                   </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product02.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left mom">
+                          <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Производство: Аванта</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">40.00 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">200.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product03.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        
+                        <div class="icon_left one">
+                          <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p>Вмесе выгоднее</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Свобода ОАО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">74.80 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">213.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product02.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left mom">
+                          <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Производство: Аванта</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">40.00 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">200.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product03.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <img src="i/reating.png" alt=""> 
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left one">
+                          <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p>Вмесе выгоднее</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Свобода ОАО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">74.80 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <!-- <span class="sale">3%</span> -->
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product02.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                      <div class="icon_left mom">
-                        <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Производство: Аванта</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">40.00 ₽</div>
-                        <!-- <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <span class="sale">3%</span>
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product01.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Галант Косметик-М ООО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">200.20 ₽</div>
-                        <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span>
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <!-- <span class="sale">3%</span> -->
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product03.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                      
-                      <div class="icon_left one">
-                        <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p>Вмесе выгоднее</p>
-                        </div>
-                      </div>
-                      <div class="icon_left baby">
-                        <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                      <div class="icon_left baby">
-                        <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Свобода ОАО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">74.80 ₽</div>
-                        <!-- <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <span class="sale">3%</span>
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product01.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Галант Косметик-М ООО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">213.20 ₽</div>
-                        <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span>
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <!-- <span class="sale">3%</span> -->
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product02.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                      <div class="icon_left mom">
-                        <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Производство: Аванта</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">40.00 ₽</div>
-                        <!-- <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <span class="sale">3%</span>
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product01.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Галант Косметик-М ООО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">200.20 ₽</div>
-                        <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span>
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 promo_col">
-                <div class="product_item">
-                  <!-- <span class="sale">3%</span> -->
-                  <div class="product_item_row">
-                    <div class="product_item_top">
-                      <div class="product_item_img">
-                        <img src="i/product03.png" alt="">
-                      </div>
-                      <div class="product_item_rating">
-                        <img src="i/reating.png" alt=""> 
-                        <span>(248)</span>
-                      </div>
-                    </div>
-                    <div class="product_item_left">
-                      <div class="icon_left one">
-                        <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p>Вмесе выгоднее</p>
-                        </div>
-                      </div>
-                      <div class="icon_left baby">
-                        <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                      <div class="icon_left baby">
-                        <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
-                        <div class="product_icon_desc">
-                          <p><b>Выбор мам</b></p>
-                          <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
-                  <div class="product_item_from">
-                    <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
-                    <span class="product_item_from_name">Свобода ОАО</span>
-                  </div>
-                  <div class="product_item_price_wrap">
-                    <div class="product_item_price_row">
-                      <div class="product_item_total_price">
-                        <div class="product_item_price">74.80 ₽</div>
-                        <!-- <span class="product_item_old_price">376.50 ₽</span>
-                        <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
-                      </div>
-                      <div class="product_item_counter">
-                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                        <input type="text" class="count_input" value="1">
-                        <span class="up"  onClick='increaseCount(event, this)'>+</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product_item_btn">
-                    <button class="btn buy-btn">В корзину</button>
-                  </div>
-                </div>
+              <div class="pagenation_box">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="prev"></span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">25</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="next"></span>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="section section_form">
+				<div class="container">
+					<div class="section_content">
+						<div class="section_title -center">Будьте первым кто узнает о скидках</div>
+						<div class="form_wrap">
+							<form action="">
+								<div class="form_row row">
+                  <input class="form-control" type="text" placeholder="Осталось указать только почту">
+                  <button type="submit" class="btn btn-iform">Буду первым!</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 
     </main>
 		<footer class="footer">
