@@ -91,11 +91,6 @@ $('.section_description_item_title').on('click', function () {
 
 
 
-
-
-
-
-
   $('.promo_carousel').slick({
 		dots: false,
     arrows: false,

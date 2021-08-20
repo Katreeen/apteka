@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Category</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="i/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- style -->
+  <link rel="stylesheet" href="libs/bootstrap5/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="libs/slick/slick.css"/>
+  <link rel="stylesheet" href="libs/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.min.css"/>
+  <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+<body class="catalog category">
+  <div class="wrapper">
+		<header class="header">
+      <div class="header_top">
+        <div class="container">
+          <div class="header_top_row row">
+            <a	href="/" class="header_logo"><img src="i/logo.png" alt=""></a>
+            <div class="col-lg-8 col-xl-9 header_col_menu">
+              <ul class="header_top_menu">
+                <li class="menu-item"><a href="#" class="menu-item-link">Контакты</a>
+                <li class="menu-item"><a href="#" class="menu-item-link">Лицензия</a>
+                <li class="menu-item"><a href="#" class="menu-item-link">Вопрос-ответ</a>
+                <li class="menu-item"><a href="#" class="menu-item-link">Вакансии</a>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-xl-3 header_col_phone">
+              <a href="tel:+78463792014" class="header_phone">+7(846)379-20-14</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_center">
+        <div class="container">
+          <div class="header_row row">
+            <div class="col-lg-8  col-xl-9 header_col_search">
+              <div class="header_search">
+                <form class="form-inline form_search">
+                  <input class="form-control -got-400" type="search" placeholder="Введите название препарата" aria-label="Search">
+                  <button class="btn search_btn" type="submit">Найти</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 header_col_user">
+              <div class="header_icon_row">
+                <a href="#" class="header_icon header_person"></a>
+                <a href="#" class="header_icon header_favorite"></a>
+                <a href="#" class="header_icon header_cart"><span class="count">1</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container">
+          <div class="header_bottom_row">
+              <div class="header_search">
+                <form class="form-inline form_search">
+                  <input class="form-control -got-400" type="search" placeholder="Введите название препарата" aria-label="Search">
+                  <button class="btn search_btn" type="submit">Найти</button>
+                </form>
+              </div>
+            <button class="navbar-toggler"></button>
+            <ul class="header_menu">
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic01.svg" alt=""></span>
+                  <span class="menu_title">Акции</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic02.svg" alt=""></span>
+                  <span class="menu_title">Мама и малыш</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic03.svg" alt=""></span>
+                  <span class="menu_title">Красота и гигиена</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic04.svg" alt=""></span>
+                  <span class="menu_title">Мед. техника</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link parent">
+                  <span class="menu_icon"><img src="i/menu-ic05.svg" alt=""></span>
+                  <span class="menu_title">Лекарства и БАДы</span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="container">
+                    <div class="row dropdown-menu-row">
+                      <div class="col-drop">
+                        <a class="dropdown-item nav_category" href="catalog.php">лекарства</a>
+                        <nav class="nav dropdown_nav">
+                          
+                          <a class="dropdown-item" href="#">Аллергия</a>
+                          <a class="dropdown-item" href="#">Желудочно-кишечные заболевания</a>
+                          <a class="dropdown-item" href="#">Печень и желчный пузырь</a>
+                          <a class="dropdown-item" href="#">Заболевания крови</a>
+                          <a class="dropdown-item" href="#">Гинекология</a>
+                          <a class="dropdown-item" href="#">Поражения кожи</a>
+                          <a class="dropdown-item" href="#">Диетология</a>
+                          <a class="dropdown-item" href="#">Иммунитет</a>
+                          <a class="dropdown-item" href="#">Инфекционные заболевания</a>
+                          <a class="dropdown-item" href="#">Сердце и сосуды</a>
+                          <a class="dropdown-item" href="#">Вредные привычки</a>
+                          <a class="dropdown-item" href="#">Мозговое кровообращение</a>
+                          <a class="dropdown-item" href="#">Суставы и позвоночник</a>
+                          <a class="dropdown-item" href="#">Успокаивающие</a>
+                          <a class="dropdown-item" href="#">Онкология</a>
+                          <a class="dropdown-item" href="#">Лор-заболевания</a>
+                          <a class="dropdown-item" href="#">Заболевания глаз</a>
+                        </nav>
+                        </div>
+                        <div class="col-drop">
+                        <a class="dropdown-item nav_category" href="catalog.php">Быды</a>
+                        <nav class="nav dropdown_nav">
+                          
+                          <a class="dropdown-item" href="#">Геморрой</a>
+                          <a class="dropdown-item" href="#">Психические расстройства</a>
+                          <a class="dropdown-item" href="#">Дыхательная система</a>
+                          <a class="dropdown-item" href="#">Реанимация</a>
+                          <a class="dropdown-item" href="#">От насекомых</a>
+                          <a class="dropdown-item" href="#">Стоматология (без ухода за полостью рта)</a>
+                          <a class="dropdown-item" href="#">Кашель</a>
+                          <a class="dropdown-item" href="#">Витамины и микроэлементы</a>
+                          <a class="dropdown-item" href="#">Простуда, грипп</a>
+                          <a class="dropdown-item" href="#">Сердце и сосуды</a>
+                          <a class="dropdown-item" href="#">Вредные привычки</a>
+                          <a class="dropdown-item" href="#">Мозговое кровообращение</a>
+                          <a class="dropdown-item" href="#">Суставы и позвоночник</a>
+                          <a class="dropdown-item" href="#">Успокаивающие</a>
+                          <a class="dropdown-item" href="#">Онкология</a>
+                          <a class="dropdown-item" href="#">Лор-заболевания</a>
+                          <a class="dropdown-item" href="#">Заболевания глаз</a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic06.svg" alt=""></span>
+                  <span class="menu_title">Интимные товары</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic07.svg" alt=""></span>
+                  <span class="menu_title">Детские развивающие игрушки</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic08.svg" alt=""></span>
+                  <span class="menu_title">Бытовая химия</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-item-link">
+                  <span class="menu_icon"><img src="i/menu-ic-more.svg" alt=""></span>
+                  <span class="menu_title">Еще </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+		</header>
+		<main class="main">
+      <div class="section section_breadcrumb">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Лекарства и Бады</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Витамины и микроэлементы</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="container">
+          <div class="main_title">Моя корзина</div>
+          <div class="section_basket">
+            <div class="basket_row row">
+              <div class="col-xl-8">
+                <div class="basket_products">
+                  <div class="basket_item">
+                    <div class="basket_item_row row">
+                      <div class="col-6 col-lg-4">
+                        <div class="basket_item_img">
+                          <span class="sale">3%</span>
+                          <img src="i/basket.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-6 col-lg-8">
+                        <div class="basket_item_info">
+                          <div class="basket_item_info_row">
+                            <div class="product_instok">В наличии</div>
+                            <div class="product_vendor">Артикул: 142152</div>
+                            <div class="product_from">
+                              <span class="product_from_icon"><img src="i/flag.png" alt=""></span>
+                              <span class="product_from_name">Галант Косметик-М ООО</span>
+                            </div>
+                          </div>
+                          <div class="basket_item_name">Витаминно-Минеральный компл от А до Цинка д/школьн/детей 7-14 лет табл x30</div>
+                          <div class="basket_item_rating">
+                            <img src="i/reating.png" alt=""> 
+                            <span>(248)</span>
+                          </div>
+                          <div class="basket_item_btn">
+                            <a href="#" class="basket_btn product_favorite">В избранное</a>
+                            <a href="#" class="basket_btn product_delete">Удалить</a>
+                          </div>
+                          <div class="basket_item_info_bottom">
+                            <div class="product_counter">
+                              <span class="down" onclick="decreaseCount(event, this)">-</span>
+                              <input type="text" class="count_input" value="1">
+                              <span class="up" onclick="increaseCount(event, this)">+</span>
+                            </div>
+                            <div class="product_info_price">
+                              <div class="product_total_price">
+                                <div class="product_price">213.20 ₽</div>
+                                <span class="product_old_price">376.50 ₽</span>
+                                <span class="product_discount">-163.3 ₽ (32%)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket_item_mobil">
+                      <div class="basket_item_btn">
+                        <a href="#" class="basket_btn product_favorite">В избранное</a>
+                        <a href="#" class="basket_btn product_delete">Удалить</a>
+                      </div>
+                      <div class="product_counter">
+                        <span class="down" onclick="decreaseCount(event, this)">-</span>
+                        <input type="text" class="count_input" value="1">
+                        <span class="up" onclick="increaseCount(event, this)">+</span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="basket_item">
+                    <div class="basket_item_row row">
+                      <div class="col-6 col-lg-4">
+                        <div class="basket_item_img">
+                          <span class="sale">3%</span>
+                          <img src="i/basket.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-6 col-lg-8">
+                        <div class="basket_item_info">
+                          <div class="basket_item_info_row">
+                            <div class="product_instok">В наличии</div>
+                            <div class="product_vendor">Артикул: 142152</div>
+                            <div class="product_from">
+                              <span class="product_from_icon"><img src="i/flag.png" alt=""></span>
+                              <span class="product_from_name">Галант Косметик-М ООО</span>
+                            </div>
+                          </div>
+                          <div class="basket_item_name">Витаминно-Минеральный компл от А до Цинка д/школьн/детей 7-14 лет табл x30</div>
+                          <div class="basket_item_rating">
+                            <img src="i/reating.png" alt=""> 
+                            <span>(248)</span>
+                          </div>
+                          <div class="basket_item_btn">
+                            <a href="#" class="basket_btn product_favorite">В избранное</a>
+                            <a href="#" class="basket_btn product_delete">Удалить</a>
+                          </div>
+                          <div class="basket_item_info_bottom">
+                            <div class="product_counter">
+                              <span class="down" onclick="decreaseCount(event, this)">-</span>
+                              <input type="text" class="count_input" value="1">
+                              <span class="up" onclick="increaseCount(event, this)">+</span>
+                            </div>
+                            <div class="product_info_price">
+                              <div class="product_total_price">
+                                <div class="product_price">213.20 ₽</div>
+                                <span class="product_old_price">376.50 ₽</span>
+                                <span class="product_discount">-163.3 ₽ (32%)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket_item_mobil">
+                      <div class="basket_item_btn">
+                        <a href="#" class="basket_btn product_favorite">В избранное</a>
+                        <a href="#" class="basket_btn product_delete">Удалить</a>
+                      </div>
+                      <div class="product_counter">
+                        <span class="down" onclick="decreaseCount(event, this)">-</span>
+                        <input type="text" class="count_input" value="1">
+                        <span class="up" onclick="increaseCount(event, this)">+</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="basket_order">
+                  <div class="basket_order_title -center">Ваш заказ</div>
+                  <div class="basket_order_info">
+                    <div class="basket_order_info_row">
+                      <div class="basket_order_info_item_title">
+                        Заказ
+                      </div>
+                      <div class="basket_order_info_item_price">
+                        236.6 ₽
+                      </div>
+                    </div>
+                    <div class="basket_order_info_row">
+                      <div class="basket_order_info_item_title">
+                        Скидка
+                      </div>
+                      <div class="basket_order_info_item_price -sale">
+                        -9.46 ₽
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket_order_result">
+                    <div class="basket_order_result_row">
+                      <div class="basket_order_result_title">
+                        Общая стоимость: 
+                      </div>
+                      <div class="basket_order_result_price">227,14 ₽</div>
+                    </div>
+                  </div>
+                  <div class="basket_order_result_btn">
+                    <button class="btn btn-order">Оформить заказ</button>
+                    <div class="offer_info">Оформляя заказ я принимаю условия договора оферты</div>
+                  </div>
+                </div>
+                <div class="basket_pay">
+                  <div class="basket_pay_info">Принимаем к оплате</div>
+                  <div class="basket_pay_items"><img src="i/pay.png" alt=""></div> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="section section_form">
+				<div class="container">
+					<div class="section_content">
+						<div class="section_title -center">Будьте первым кто узнает о скидках</div>
+						<div class="form_wrap">
+							<form action="">
+								<div class="form_row row">
+                  <input class="form-control" type="text" placeholder="Осталось указать только почту">
+                  <button type="submit" class="btn btn-iform">Буду первым!</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+    </main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer_row row">
+          <div class="col-lg-3 col-xl-2 footer_col_logo">
+            <a href="/" class="footer_logo"><img src="i/footer_logo.png" alt=""></a>
+            <div class="footer_copy">© 2021 Все права защищены</div>
+					</div>
+					<div class="col-lg-3 col-xl-2 footer_col_menu">
+						<div class="footer_menu">
+							<a href="#" class="footer_menu-item">Контакты</a>
+							<a href="#" class="footer_menu-item">Лицензия</a>
+							<a href="#" class="footer_menu-item">Вопрос-ответ</a>
+							<a href="#" class="footer_menu-item">Вакансии</a>
+						</div>
+					</div>
+          <div class="col-lg-12 col-xl-3 footer_col_gpay">
+            <div class="footer_gpay">
+              <div class="gpay_title">Еще больше скидок в приложении</div>
+              <a href="#" class="gpay_link"><img src="i/ic-gpay.svg" alt=""></a>
+            </div>
+          </div>
+					<div class="col-lg-6 col-xl-5 footer_col_contact">
+            <div class="footer_contact">
+              <div class="footer_contact_phone">
+                <a href="tel:+78463792014" class="f-phone">+7(846)379-20-14</a>
+              </div>
+              <div class="footer_contact_info">
+                <div class="f-address">г.Калуга, ул. Ленина, д. 78/66</div>
+                <div class="f-wtime">Ежедневно с 8:00 до 22:00</div>
+              </div>
+            </div>
+					</div>
+				</div>
+        <div class="footer_mobil">
+          <a href="#" class="footer_mobil_link -contacts">
+            Контакты
+          </a>
+          <a href="#" class="footer_mobil_link -policy">Политика конфиденциальности</a>
+          <div class="copy">© 2021 Все права защищены</div>
+        </div>
+		</footer>
+</div>
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/bootstrap5/bootstrap.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/jquery/jquery.maskedinput.min.js"></script>
+  <script src="libs/jquery/jquery-ui/jquery-ui.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
