@@ -118,14 +118,14 @@ $('.section_description_item_title').on('click', function () {
   });
   
 
-  $('.order_item_products_carousrl').slick({
+  $('.order_item_products_carousel').slick({
 		dots: false,
     arrows: false,
-    centerMode: true,
-		infinite: true,
+    centerMode: false,
+		infinite: false,
 		speed: 500,
 		cssEase: 'linear',
-    slidesToShow: 1,
+    slidesToShow: 2,
     responsive: [
 			{
 			  breakpoint: 991,
@@ -136,7 +136,8 @@ $('.section_description_item_title').on('click', function () {
 			{
 			  breakpoint: 420,
 			  settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          
 				 
 			  }
 			}

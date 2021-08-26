@@ -646,9 +646,9 @@ button:focus, a:focus, img:focus {outline:none;}
                     .info_detail_row{}
                       .info_detail_title{text-align: right; font-weight: bold; width: 140px; line-height: 30px;}
                       .info_detail_text{padding-left: 30px;}
-                      .tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; opacity: 1; border: none; }
+                      .tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; opacity: 1; border: none; z-index: 0;}
                       
-                      .tooltip .tooltiptext { visibility: hidden; width: 217px; background-color: #fff; color: #2A2834; text-align: center; padding: 10px 12px; border-radius: 6px; position: absolute; top: calc(-100% - 50px); right: -105px; z-index: 1; font-size: 14px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border: 1px solid #ECECEC; }
+                      .tooltip .tooltiptext { visibility: hidden; width: 217px; background-color: #fff; color: #2A2834; text-align: center; padding: 10px 12px; border-radius: 6px; position: absolute; top: calc(-100% - 50px); right: -105px;  font-size: 14px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border: 1px solid #ECECEC; }
                       
                       
                       .tooltip:hover .tooltiptext { visibility: visible; }
@@ -682,7 +682,17 @@ button:focus, a:focus, img:focus {outline:none;}
                           .order_item_product_price{text-align: center; font-size: 18px; font-weight: bold;}
 
                           .order_item_product+.order_item_product{margin-top: 10px;}
-                          .order_item_products_carousrl{display: none;}
+                          .order_item_products_carousel{display: none;}
+                            .order_product{background: #FFFFFF; border: 1px solid #C4C4C4; border-radius: 5px; padding: 12px 12px 18px; margin: 4px;}
+                              .order_product_img{height: 96px; text-align: center;}
+                              .order_product_img img{height: 96px; margin: auto;}
+                              .order_product_title{color: #424242; font-weight: bold; font-size: 10px; text-align: center; padding: 9px 0; line-height: 16px; display: block;}
+                              .order_product_bottom{font-size: 14px; color: #000000; border-bottom: 1px solid #BFBFBF; border-top: 1px solid #BFBFBF; padding: 9px 0;}
+                                .order_product_row{display: flex; justify-content: space-between;}
+                                  .order_product_col_title{}
+                                  .order_product_col_text{text-align: right;}
+                                    .detail_price{color: #5F5F5F; font-size: 10px; line-height: 1;}
+                              .order_product_btn{padding-top: 15px;}
 
 
 
@@ -1110,7 +1120,7 @@ button:focus, a:focus, img:focus {outline:none;}
 .personal_top{flex-direction: column; align-items: flex-start;}
 .order_item_info_detail_btn{text-align: center; margin-top: 20px;}
 .order_item_products{display: none;}
-.order_item_products_carousrl{display: block;}
+.order_item_products_carousel{display: block;}
 
 }
 
@@ -1156,6 +1166,10 @@ button:focus, a:focus, img:focus {outline:none;}
   .basket_item_info_row{display: none;}
   .basket_item_rating{display: none;}
   .basket_item_btn{width: 50%;}
+  .personal_left_nav{padding: 0; border: none; display: flex; flex-wrap: wrap; justify-content: center;}
+.personal_left_nav .nav-item{width: 50%; padding: 1px;}
+.personal_left_nav .nav-link{background: #FFFFFF; border: 1px solid #E0E0E0; font-size: 14px; text-align: center; border-radius: 5px; line-height: 44px;}
+.personal_left_nav .nav-link.active{background: #3498DB; color: #fff; border: 1px solid #3498DB;}
   
 	
 }
@@ -1292,7 +1306,12 @@ button:focus, a:focus, img:focus {outline:none;}
 .btn-order{font-size: 20px; padding: 0; width: 100%; height: 60px;}
 .offer_info{font-size: 13px;}
 .basket_pay{display: none;}
+.order_item{padding: 0; border: none;}
+.order_item_products_carousel .promo_item{min-width: auto;}
+
+.order_item{border-top: 1px solid #2A2834; padding-top: 22px; border-radius: 0;}
 }
+.order_item_products_carousel{border-top: 1px solid #BFBFBF; padding-top: 28px;}
 
 @media(max-width: 400px){
   .container{padding-left: 16px; padding-right: 16px;}
