@@ -50,7 +50,7 @@
             </div>
             <div class="col-lg-4 col-xl-3 header_col_user">
               <div class="header_icon_row">
-                <a href="#" class="header_icon header_person"></a>
+                <a data-fancybox data-src="#reg" href="#" class="header_icon header_person"></a>
                 <a href="#" class="header_icon header_favorite"></a>
                 <a href="#" class="header_icon header_cart"><span class="count">1</span></a>
               </div>
@@ -74,37 +74,46 @@
                   <span class="menu_icon"><img src="i/menu-ic01.svg" alt=""></span>
                   <span class="menu_title">Акции</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic02.svg" alt=""></span>
                   <span class="menu_title">Мама и малыш</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic03.svg" alt=""></span>
                   <span class="menu_title">Красота и гигиена</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic04.svg" alt=""></span>
                   <span class="menu_title">Мед. техника</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link parent">
                   <span class="menu_icon"><img src="i/menu-ic05.svg" alt=""></span>
                   <span class="menu_title">Лекарства и БАДы</span>
                 </a>
+                <span class="nav-item-toggler"></span>
                 <div class="dropdown-menu">
                   <div class="container">
                     <div class="row dropdown-menu-row">
+                      <div class="col-drop col-drop-hidden">
+                          <a class="dropdown-item nav_category item-back-link" href="#">Назад в меню</a>
+                      </div>
                       <div class="col-drop">
-                        <a class="dropdown-item nav_category" href="catalog.php">лекарства</a>
+                        <a class="dropdown-item nav_category" href="#">Лекарства</a>
+                        <span class="nav-item-toggler"></span>
                         <nav class="nav dropdown_nav">
-                          
+                          <a class="dropdown-item item-back-link" href="#">Лекарства и БАДы</a>
                           <a class="dropdown-item" href="#">Аллергия</a>
                           <a class="dropdown-item" href="#">Желудочно-кишечные заболевания</a>
                           <a class="dropdown-item" href="#">Печень и желчный пузырь</a>
@@ -125,9 +134,10 @@
                         </nav>
                         </div>
                         <div class="col-drop">
-                        <a class="dropdown-item nav_category" href="catalog.php">Быды</a>
+                        <a class="dropdown-item nav_category" href="#">Бады</a>
+                        <span class="nav-item-toggler"></span>
                         <nav class="nav dropdown_nav">
-                          
+                          <a class="dropdown-item item-back-link" href="#">Лекарства и БАДы</a>
                           <a class="dropdown-item" href="#">Геморрой</a>
                           <a class="dropdown-item" href="#">Психические расстройства</a>
                           <a class="dropdown-item" href="#">Дыхательная система</a>
@@ -156,24 +166,28 @@
                   <span class="menu_icon"><img src="i/menu-ic06.svg" alt=""></span>
                   <span class="menu_title">Интимные товары</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic07.svg" alt=""></span>
                   <span class="menu_title">Детские развивающие игрушки</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic08.svg" alt=""></span>
                   <span class="menu_title">Бытовая химия</span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-item-link">
                   <span class="menu_icon"><img src="i/menu-ic-more.svg" alt=""></span>
                   <span class="menu_title">Еще </span>
                 </a>
+                <span class="nav-item-toggler"></span>
               </li>
             </ul>
           </div>
@@ -425,6 +439,71 @@
           <div class="copy">© 2021 Все права защищены</div>
         </div>
 		</footer>
+</div>
+<div class="popup auth_phone" id="auth_phone">
+  <div class="popup_wrap">
+    <div class="popup_title">
+      Укажите номер телефона для создания личного кабинета
+    </div>
+    <form action="" class="form">
+      <div class="form_row cener_row">
+        <input class="form-control phone" type="text" placeholder="+7 (___) ___ - __ - __">
+        <button class="btn btn-iform" type="submit">Войти</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="popup auth" id="auth">
+  <div class="popup_wrap">
+    <div class="popup_title">
+      Вход в личный кабинет
+    </div>
+    <form action="" class="form">
+      <div class="form_group">
+        <input class="form-control phone" type="text" placeholder="+7 (___) ___ - __ - __">
+        <input class="form-control" type="password" placeholder="Ваш пароль">
+        <button class="btn btn-submit" type="submit">Войти</button>
+        <a href="#" class="forgot_pass">Забыли пароль?</a>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="popup reg" id="reg">
+  <div class="popup_wrap">
+    <div class="popup_title">
+      Регистарция на сайте
+    </div>
+    <form action="" class="form">
+      <div class="form_group">
+        <input class="form-control phone" type="text" placeholder="+7 (___) ___ - __ - __">
+        <input class="form-control" type="text" placeholder="Как Вас зовут?">
+        <input class="form-control" type="email" placeholder="Укажите Ваш почту?">
+        <input class="form-control" type="password" placeholder="Укажите пароль">
+      </div>
+        <div class="error">
+          <span class="red">Количество символов меньше 6</span>
+          <span class="green">Используйте цифры</span>
+          <span class="green">Используйте буквы</span>
+        </div>
+        
+        <div class="agree">
+          <div class="agree_title">Я согласен на получение сообщений</div>
+          <div class="agree_check">
+            <div class="check_row">
+              <input type="checkbox" id="subscribeOrderStatus" name="subscribeOrderStatus" value="">
+              <label for="subscribeOrderStatus">О статусе моего заказа</label>
+            </div>
+            <div class="check_row">
+              <input type="checkbox" id="subscribeSale" name="subscribeSale" value="">
+              <label for="subscribeSale">О акциях, проводимых в аптеке</label>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-submit" type="submit">Создать личный кабинет</button>
+        
+      
+    </form>
+  </div>
 </div>
   <script src="libs/jquery/jquery-3.4.1.min.js"></script>
   <script src="libs/bootstrap5/bootstrap.min.js"></script>

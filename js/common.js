@@ -276,7 +276,17 @@ $('.section_description_item_title').on('click', function () {
   $('.navbar-toggler-close').click(function () {
     $('.header_drop').slideUp();
   });
-
+  $('.nav-item-toggler').click(function () {
+    $(this).next().css({ 'display': 'block' });
+  });
+  $('.item-back-link').click(function () {
+    $(this).parents('.nav').css({'display' : 'none'});
+  });
+  $('.nav_category.item-back-link').click(function () {
+    $('.dropdown_nav').css({'display' : 'none'});
+    $(this).parents('.dropdown-menu').css({'display' : 'none'});
+  });
+  
 
 		
 	$("#product_sort").selectmenu();
@@ -293,5 +303,6 @@ $('.section_description_item_title').on('click', function () {
         1200
       );
   });
+  $(".phone").mask("+7 (999) 999 - 99 - 99");
 	
   });
