@@ -1051,6 +1051,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
   .order_item_info_detail_btn .btn{margin-left: 14px;}
   .order_item_info_left .info_detail_title{white-space: nowrap;}
   .info_detail_text{text-align-last: left;}
+  .basket_order_result_btn .btn-order{    padding: 0; width: 100%;}  
 }
 
 
@@ -1062,7 +1063,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
   .header_bottom{padding: 14px 0;}
   .nav-item-link{padding-right: 0; padding-left: 0;}
   .header_menu > .nav-item{height: auto; flex: none;}
-  
+  .basket_order{max-width: 100%; margin-top: 20px;}
   .menu-item:not(:first-child):before{display: none;}
   .header_top_menu{justify-content: space-between;}
   .carousel_item_title{font-size: 33px; line-height: 1.4;}
