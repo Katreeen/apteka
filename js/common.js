@@ -107,9 +107,10 @@ $('.section_description_item_title').on('click', function () {
 			  }
 			},
 			{
-			  breakpoint: 420,
+			  breakpoint: 450,
 			  settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          centerMode: false,
 				 
 			  }
 			}
