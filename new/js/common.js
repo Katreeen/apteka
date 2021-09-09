@@ -93,7 +93,7 @@ $('.section_description_item_title').on('click', function () {
 
   $('.promo_carousel').slick({
 		dots: false,
-    arrows: false,
+    arrows: true,
     centerMode: true,
 		infinite: true,
 		speed: 500,
@@ -110,7 +110,8 @@ $('.section_description_item_title').on('click', function () {
 			  breakpoint: 450,
 			  settings: {
           slidesToShow: 2,
-          centerMode: false,
+          centerMode: true,
+          
 				 
 			  }
 			}
