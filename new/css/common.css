@@ -399,6 +399,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
         .promo_col{margin-bottom: 31px; /*min-width: 350px; max-width: 350px;*/}
           .product_item{border: 1px solid #DADADA; border-radius: 5px; padding: 14px 18px 30px; background: #FFFFFF; position: relative; min-height: 100%;}
             .sale{background: #E70343; width: 48px; height: 48px; position: absolute; top: 20px; left: 20px; font-size: 21px; font-weight: bold; color: #fff; transform: rotate(-10.41deg); display: flex; align-items: center; justify-content: center; border-radius:50%;}
+            .resept-icon{background: url(../i/resept.svg)#1274B5 no-repeat center; width: 37px; height: 37px; position: absolute; top: 20px; left: 20px; display: flex; align-items: center; justify-content: center; border-radius:50%; background-size: 16px 23px}
             .product_item_row{display: flex;}
               .product_item_top{width: calc(100% - 62px);}
                 .product_item_img{text-align: center; height: 190px; margin-bottom: 30px; padding-top: 18px;}
@@ -1001,7 +1002,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 			.error_title{margin-bottom: 26px;}
 			.error_text{}
 
-
+.product_item .tooltip .tooltiptext{top: 40px; left: 0; right: auto;}
 .navbar-toggler:focus{outline: none; box-shadow: none}
 
 /* only mobil */
@@ -1017,6 +1018,8 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 .nav-item-toggler{display: none;}
 .col-drop-hidden{display: none;}
 .item-back-link{display: none;}
+.product_list_mobil{display: none;}
+
 /* media */
 @media(max-width: 1739px){
   
@@ -1333,6 +1336,22 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 .product_counter{margin-left: 0; margin-bottom: 16px;}
 .view_offers_box {padding-bottom: 50px; height:  auto;}
 .pin_off_product{padding: 10px;}
+.product_list_mobil{display: block;}
+.section_catalog .product_list{display: none;}
+.product_list_mobil .product_item_title{font-size: 16px;line-height: 25px; border-bottom: 1px solid #BFBFBF; padding-bottom: 10px;}
+.product_item_icons{display: flex; padding-top: 18px; margin-left: -7px; margin-right: -7px; }
+.icon_item{font-size: 12px;  text-align: center; border-right: 1px solid #BFBFBF; padding: 0 7px; line-height: 1.2;}
+.product_list_mobil .product_icon_title{padding-top: 12px;}
+.icon_item:last-child{border-right: none;}
+.product_list_mobil .product_item{padding: 16px 12px;}
+.product_list_mobil .product_item_bottom{display: flex; align-items: center; justify-content: space-between;}
+.product_list_mobil .product_item_btn{max-width: 129px; width: 100%; padding-top: 0;}
+.product_list_mobil .buy-btn:after{margin-left: 13px;}
+.product_list_mobil .resept-icon{top: 0; left: 0;}
+.product_list_mobil .product_item .tooltip .tooltiptext{max-width: 97px;font-size: 10px; line-height: 12px; padding: 10px;}
+.product_list_mobil .product_item_img{margin-bottom: 0;}
+.product_list_mobil .product_item_info{padding-bottom: 26px;}
+.product_list_mobil .product_item{margin-bottom: 20px;}
 }
 @media(max-width: 400px){
   .container{padding-left: 16px; padding-right: 16px;}
