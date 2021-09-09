@@ -1410,6 +1410,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 .breadcrumb-item+.breadcrumb-item:before{padding-right: 5px;}
 .breadcrumb-item+.breadcrumb-item:before{content: "\003E";}
 .breadcrumb-item{font-size: 12px;}
+.search_title{font-size: 24px;}
 }
 @media(max-width: 400px){
   .container{padding-left: 16px; padding-right: 16px;}
@@ -1421,6 +1422,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 .product_price{white-space: nowrap;}
 .basket_item_name{margin-top: 0;}
 .sale{top: -6px; left: -6px;}
+.section_catalog{padding-top: 0;}
 
 
 }
