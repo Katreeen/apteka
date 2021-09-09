@@ -763,7 +763,7 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
     .breadcrumb-item.active{}
       .breadcrumb-item a{color: #2E2E2E; text-decoration: none;}
       .breadcrumb-item+.breadcrumb-item{padding-left: 8px;}
-      .breadcrumb-item+.breadcrumb-item::before{content:"\2192"; font-size: 17px; padding-right: 8px;} 
+      .breadcrumb-item+.breadcrumb-item::before{content:"\2192"; padding-right: 8px; float: none; display: inline-block; } 
 
 
 .main_content{position: relative;}
@@ -979,8 +979,9 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
         .offer_info{max-width: 382px; text-align: center; margin: 0 auto; color:#0C59CF; font-size: 16px; line-height: 1.4;}
 
   .basket_pay{margin-top: 50px; max-width: 450px; margin-right: auto; margin-left: auto;}
-    .basket_pay_info{color: #2A2834; font-size: 24px; font-weight: bold; text-align: center; margin-bottom: 24px;}
+    .basket_pay_info{color: #2A2834; font-size: 20px; font-weight: bold; text-align: center; margin-bottom: 24px;}
     .basket_pay_items{text-align: center;}
+    .basket_pay_items img{max-width:240px}
 			
 
 
@@ -1405,6 +1406,10 @@ input[type=checkbox]:checked + label:before {border: 1px solid #0EC040; backgrou
 .product_list_mobil .product_item_info{padding-bottom: 26px;}
 .product_list_mobil .product_item{margin-bottom: 20px;}
 .promo_row{min-width: 160px;}
+.breadcrumb-item+.breadcrumb-item{padding-left: 5px;}
+.breadcrumb-item+.breadcrumb-item:before{padding-right: 5px;}
+.breadcrumb-item+.breadcrumb-item:before{content: "\003E";}
+.breadcrumb-item{font-size: 12px;}
 }
 @media(max-width: 400px){
   .container{padding-left: 16px; padding-right: 16px;}
