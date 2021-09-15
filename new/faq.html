@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Personal</title>
+  <title>FAQ</title>
   <meta name="description" content="">
   <link rel="shortcut icon" href="i/favicon/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
   <link rel="stylesheet" href="css/common.css">
 </head>
-<body class="personal">
+<body class="catalog category">
   <div class="wrapper">
 		<header class="header">
       <div class="header_top">
@@ -402,520 +402,239 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Мой кабинет</li>
+              <li class="breadcrumb-item active" aria-current="page">FAQ</li>
             </ol>
           </nav>
         </div>
       </div>
       <div class="main_content">
         <div class="container">
-          
-            <div class="main_title">Мой кабинет</div>
-
-          
-          <div class="personal_wrap">
-            <div class="personal_row row">
-              <div class="col-md-3">
-                <div class="personal_left">
-                  <ul class="personal_left_nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Мой профиль</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">История заказов</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Избранное</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Выйти</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="personal_center">
-                  <div class="personal_top">
-                    <div class="section_title">История заказов</div>
-                    <div class="order_filter">
-                      <div class="order_filter_row">
-                        <div class="order_filter_title">Фильтр:</div>
-                        <select name="" id="" class="o-filter">
-                          <option value="6">последние 6 месяцев</option>
-                          <option value="9">последние 9 месяцев</option>
-                          <option value="12">последние 12 месяцев</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+          <div class="main_title">FAQ</div>
+          <div class="main_content_wrap">  
+            <div class="questions">
+							<div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">В аптеке у меня запрашивают «код оплаченного заказа». Где я могу его видеть?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Код оплаченного заказа содержится в:</p>
+                  <ol>
+                      <li>смс от аптеки;</li>
+                      <li>В информации о заказе в вашем личном кабинете на сайте.</li>
+                  </ol>
+                  <p>Это 4-х значный код, который гарантирует, что Ваш заказ не заберет посторонний.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Если мне не пришла смс по заказу, смогу ли я его забрать?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>При проблемах у сотового оператора смс может не прийти вовремя. Если Вам не пришла смс в течение часа, то нужно:</p>
+                  <ol>
+                    <li>Позвонить в аптеку и убедиться что заказ собран;</li>
+                    <li>Зайти в личный кабинет и убедиться, что в нем появился 4-х значный код получения заказа, без которого заказ Вы получить не сможете.</li>
+                  </ol>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Что происходит с деньгами, когда я оплачиваю заказ на сайте?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Денежные средства холдируются (замораживаются), но остаются на Вашем счете, хотя и временно не доступны к использованию.</p>
                   
-                  <div class="order_list">
-                    <div class="order_item">
-                      <div class="order_item_info">
-                        <div class="order_item_info_row row">
-                          <div class="col-xl-3 order_item_info_col">
-                            <div class="order_item_info_left">
-                              <div class="order_item_info_detail">
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">№ Заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">2008963402</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Дата заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">10.07.2021</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Сумма заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">923.1 ₽</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Код:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">
-                                      1234
-                                      <div class="tooltip"><span class="i-icon"></span>
-                                        <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-9 order_item_info_col">
-                            <div class="order_item_info_right">
-                              <div class="order_item_info_right_row row">
-                                <div class="col-lg-9">
-                                  <div class="order_item_info_detail">
-                                    <div class="info_detail_row row">
-                                      <div class="col-md-3">
-                                        <div class="info_detail_title">Статус:</div>
-                                      </div>
-                                      <div class="col-md-9">
-                                        <div class="info_detail_text">
-                                          <div class="meter">
-                                            <span style="width: 55%"></span>
-                                          </div>
-                                          <div class="meter_pin">
-                                            <div class="meter_pin_item">Заказ создан</div>
-                                            <div class="meter_pin_item">Готов</div>  
-                                            <div class="meter_pin_item">Выдан</div>  
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info_detail_row row">
-                                      <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                        <div class="info_detail_title">Платежный код:</div>
-                                      </div>
-                                      <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                        <div class="info_detail_text">
-                                          123456
-                                          <div class="tooltip"><span class="i-icon"></span>
-                                            <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3">
-                                  <div class="order_item_info_detail_btn">
-                                    <button class="btn btn-print"></button>
-                                    <button class="btn btn-repeat"></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для десктопа -->
-                      <div class="order_item_products">
-                        <div class="order_products_header">
-                          <div class="order_products_header_row row">
-                            <div class="col-lg-8">
-                              <div class="order_products_header_title">Наименование товара</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Количество</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Сумма</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для десктопа -->
-
-                      <!-- для мобилки -->
-                      <p class="info_detail_title">Список товаров</p>
-                      <div class="order_item_products_carousel">
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для мобилки -->
-                    </div>
-                    <div class="order_item">
-                      <div class="order_item_info">
-                        <div class="order_item_info_row row">
-                          <div class="col-xl-3 order_item_info_col">
-                            <div class="order_item_info_left">
-                              <div class="order_item_info_detail">
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">№ Заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">2008963402</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Дата заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">10.07.2021</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Сумма заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">923.1 ₽</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Код:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">
-                                      1234
-                                      <div class="tooltip"><span class="i-icon"></span>
-                                        <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-9 order_item_info_col">
-                            <div class="order_item_info_right">
-                              <div class="order_item_info_right_row row">
-                                <div class="col-lg-9">
-                                  <div class="order_item_info_detail">
-                                    <div class="info_detail_row row">
-                                      <div class="col-md-3">
-                                        <div class="info_detail_title">Статус:</div>
-                                      </div>
-                                      <div class="col-md-9">
-                                        <div class="info_detail_text">
-                                          <div class="meter">
-                                            <span style="width: 55%"></span>
-                                          </div>
-                                          <div class="meter_pin">
-                                            <div class="meter_pin_item">Заказ создан</div>
-                                            <div class="meter_pin_item">Готов</div>  
-                                            <div class="meter_pin_item">Выдан</div>  
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info_detail_row row">
-                                      <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                        <div class="info_detail_title">Платежный код:</div>
-                                      </div>
-                                      <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                        <div class="info_detail_text">
-                                          123456
-                                          <div class="tooltip"><span class="i-icon"></span>
-                                            <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3">
-                                  <div class="order_item_info_detail_btn">
-                                    <button class="btn btn-print"></button>
-                                    <button class="btn btn-repeat"></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для десктопа -->
-                      <div class="order_item_products">
-                        <div class="order_products_header">
-                          <div class="order_products_header_row row">
-                            <div class="col-lg-8">
-                              <div class="order_products_header_title">Наименование товара</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Количество</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Сумма</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для десктопа -->
-
-                      <!-- для мобилки -->
-                      <p class="info_detail_title">Список товаров</p>
-                      <div class="order_item_products_carousel">
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для мобилки -->
-                    </div>
-
-                    
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">В какой момент происходит снятие денежных средств со счета? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>В момент пробития чека в аптеке</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">А если мой заказ собран частично, а списана с меня полная сумма?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>При пробитии чека с карты спишется сумма только за полученные товары. Остаток разморозится на вашей карте.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Прошло уже 3 дня с момента отмены заказа, а деньги так и не вернулись.</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Сроки разморозки денежных средств зависит от банка, выпустившего карту. Эти сроки могут составлять от нескольких минут до месяца.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Как я увижу, что деньги разморозились? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Зачастую никакого уведомления о разморозке средств не поступает. В зависимости от банка, который выпустил Вашу карту возможны варианты:</p>
+                  <p>В истории операций вы увидите изменение суммы списания (в случае частичного выкупа заказа) или что операция исчезла (при отмене заказа).</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Прошло уже больше месяца с отмены заказа, а ДС так и не разморозились. Что делать?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Зайти в историю операций в онлайн-банке (в приложении или на сайте банка), найти оплату по которой «не разморозились» денежные средства. В деталях этой операции будет указан «Код авторизации» (approval code).</p>
+                  <p>После этого необходимо обратиться на горячую линию банка, выпустившего карту, назвать код авторизации и попросить предоставить всю информацию по этой операции. В случае, если сотрудник банка сообщит, что денежные средства не разморожены – необходимо сообщить нам об этом звонком по телефону (на сайте) или в чате на сайте, назвав номер заказа, адрес аптеки и дату операции.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Как пройти регистрацию на сайте?</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>С пошаговой инструкцией вы можете ознакомиться здесь.</p>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 1.</b> Кликните на ссылку «войти-регистрация»</p>
+                    <img class="faq-question__image" src="/new/i/faq1.jpg">
                   </div>
-                </div>
-              </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 2.</b> В появившемся окне «Авторизация» нажмите кнопку «Регистрация на сайте»</p>
+                    <img class="faq-question__image" src="/new/i/faq2.jpg">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 3.</b> Заполните все поля, отмеченные звездочкой (пароль должен быть шестизначный) и нажмите кнопку «подтвердить»</p>
+                    <img class="faq-question__image" src="/new/i/faq3.jpg">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 4.</b>
+                    Вам придет СМС на указанный номер телефона с 4-значным кодом регистрации. Обычно, СМС приходит в течение 30 секунд. Введите его в поле «проверочный код» и нажмите кнопку «подтвердить».</p>
+                    <img class="faq-question__image" src="/new/i/faq4.jpg">
+                    <p>Поздравляем Вас, регистрация прошла успешно! На сайте заведен Ваш личный кабинет.</p>
+                    <p>Теперь вы можете приступать к бронированию товаров на сайте.</p>
+                    <p>С преимуществами личного кабинета Вы можете ознакомиться
+                    <a href="#" class="js-preimush">здесь</a></p>
+                  </div>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Как войти в личный кабинет? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>С пошаговой инструкцией вы можете ознакомиться здесь.</p>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 1.</b> Кликните на ссылку «войти-регистрация»</p>
+                    <img class="faq-question__image" src="/new/i/faq5.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 2.</b> В появившемся окне «Авторизация» заполните поля Логин (телефон) и Пароль и нажмите кнопку «Войти на сайт»</p>
+                    <img class="faq-question__image" src="/new/i/faq6.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 3.</b> В правом верхнем углу появилась ссылка с Вашим именем. Пройдите по ней. Вы вошли в Ваш личный кабинет! С преимуществами личного кабинета Вы можете ознакомиться <a href="#" class="js-preimush">здесь</a></p>
+                    <img class="faq-question__image" src="/new/i/faq7.png">
+                  </div>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Как забронировать товар на сайте? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>С пошаговой инструкцией вы можете ознакомиться здесь.</p>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 1.</b> У Вас уже есть личный кабинет? Авторизуйтесь на сайте, перейдя по ссылке «войти/регистрация». Если у Вас еще нет личного кабинета, то <a href="#reg" data-fancybox="">создайте его</a></p>
+                    <img class="faq-question__image" src="/new/i/faq8.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 2.</b> В строке поиска напишите название интересующего Вас товара (минимум 3 первые буквы из названия препарата.) В поле всплывающей подсказки выберите товар в нужном количестве и дозировке и нажмите «искать»</p>
+                    <img class="faq-question__image" src="/new/i/faq9.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 3.</b> Выберете нужное Вам кол-во товара и положите его в корзину, нажав значок корзины.</p>
+                    <img class="faq-question__image" src="/new/i/faq10.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 4.</b> Вы можете продолжить покупки или перейти к оформлению заказа, нажав соответствующую кнопку.</p>
+                    <img class="faq-question__image" src="/new/i/faq11.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 5.</b> Проверьте свой заказ и откорректируйте, если нужно количество упаковок. Если все верно, нажмите кнопку «Продолжить»</p>
+                    <img class="faq-question__image" src="/new/i/faq12.png">
+                  </div>
+                  <div class="faq-question__step">
+                    <p><b>Шаг 6.</b> Ознакомьтесь с информацией о пункте выдачи заказа и нажмите кнопку «Продолжить».</p>
+                    <img class="faq-question__image" src="/new/i/faq13.png">
+                    <p>Поздравляем! Ваш заказ успешно оформлен! В течение часа Вам придет СМС с
+                    подтверждением заказа.</p>
+                    <p>Преимущества бронирования товара на сайте:</p>
+                    <ol>
+                        <li>Это удобно! Вы выбираете товар и знакомитесь с инструкцией в любое удобное для Вас время дома или с работы.</li>
+                        <li>Это быстро! К Вашему приезду в аптеку, Ваш товар уже собран для Вас.</li>
+                        <li>Это выгодно! Вы экономите деньги, получая 3% скидки в аптеке <a href="/">ПРИ БРОНИРОВАНИИ ТОВАРА НА САЙТЕ</a></li>
+                        <li>Это надежно! При бронировании на сайте, товар резервируется для Вас, и Вы можете быть уверены, что он будет в аптеке в наличии. Особенно полезна эта функция для редких товаров, которые могут быстро закончиться в аптеке.</li>
+                    </ol>
+                  </div>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">В чем преимущества личного кабинета? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <ol>
+                    <li>Можно отслеживать статус своего заказа</li>
+                    <li>Можно посмотреть историю заказов</li>
+                    <li>В случае прихода СМС «Ваш заказ собран частично», Вы можете посмотреть детали заказа</li>
+                    <li>Если Вы решили не выкупать заказ, то можете воспользоваться кнопкой отмены, чем сэкономите время сотруднику аптеки на сборку заказа и дадите возможность купить  заказанный Вами товар другим клиентам.</li>
+                    <li>Можно повторить заказ, сделанный ранее</li>
+                    <li>Можно получать оповещения  о новинках, акциях на сайте</li>
+                    <li>Можно получить предложение с индивидуальной скидкой (в перспективе)</li>
+                  </ol>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Почему смс приходит в течение часа? </div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Ваш заказ поступает в Аптеку, и мы должны убедиться в наличии заказанного Вами товара, после чего мы отправим Вам подтверждающее смс. СМС приходит только в часы работы аптеки.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Мне пришла СМС, что заказ собран частично.</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Такой тип смс приходит, если каких-то из заказанных Вами позиций не оказалось в наличии в аптеке. Подробности своего заказа Вы можете уточнить в своем личном кабинете.</p>
+								</div>
+							</div>
+              <div class="questions__item">
+								<div class="questions__item-top">
+									<div class="questions__item-title">Сайт не загружается, виснет или не получается войти в личный кабинет</div>
+									<button class="questions__item-button"></button>
+								</div>
+								<div class="questions__item-dropdown">
+                  <p>Первое, что Вы должны попробовать, это нажать CTRL+F5 для очистки КЭШ, если это не поможет, позвоните по телефону, указанному в верхней части экрана.</p>
+								</div>
+							</div>
             </div>
           </div>
-
-
         </div>
       </div>
       <div class="section section_form">
@@ -933,6 +652,7 @@
 					</div>
 				</div>
 			</div>
+
 
     </main>
 		<footer class="footer">

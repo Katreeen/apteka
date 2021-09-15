@@ -264,7 +264,20 @@ $('.section_description_item_title').on('click', function () {
 	// 	centerMode: true,
 	// 	//adaptiveHeight: true
 	// });
+  $('.questions__item-top').click(function () {
 
+
+    
+    if ($(this).parent('.questions__item').hasClass('active')) {
+      $(this).parent('.questions__item').removeClass('active').find('.questions__item-dropdown').slideUp();
+  
+    } else {
+      $('.questions__item').removeClass('active').find('.questions__item-dropdown').slideUp();
+      $('.questions__item').parent('.questions__item').removeClass('active').find('.questions__item-dropdown').slideUp();
+      $(this).parent('.questions__item').toggleClass('active').find('.questions__item-dropdown').slideToggle()
+    }
+  });
+  
 
 	
 

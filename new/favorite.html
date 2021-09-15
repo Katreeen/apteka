@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Personal</title>
+  <title>Favorite</title>
   <meta name="description" content="">
   <link rel="shortcut icon" href="i/favicon/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="libs/jquery/jquery-ui/jquery-ui.theme.min.css"/>
   <link rel="stylesheet" href="css/common.css">
 </head>
-<body class="personal">
+<body class="search">
   <div class="wrapper">
 		<header class="header">
       <div class="header_top">
@@ -402,520 +402,413 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Мой кабинет</li>
+              <li class="breadcrumb-item active" aria-current="page">Избранное</li>
             </ol>
           </nav>
         </div>
       </div>
       <div class="main_content">
         <div class="container">
-          
-            <div class="main_title">Мой кабинет</div>
+          <div class="section_page">
+            <div class="main_title">Избранное</div>
 
-          
-          <div class="personal_wrap">
-            <div class="personal_row row">
-              <div class="col-md-3">
-                <div class="personal_left">
-                  <ul class="personal_left_nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Мой профиль</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link active">История заказов</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Избранное</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Выйти</a></li>
-                  </ul>
+
+            <div class="favorite_list">
+              <div class="favorite_list_row row">
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">213.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product02.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left mom">
+                          <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Производство: Аванта</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">40.00 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">200.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product03.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left one">
+                          <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p>Вмесе выгоднее</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Свобода ОАО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">74.80 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">213.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product02.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left mom">
+                          <div class="product_icon"><img src="i/ic-mom.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Производство: Аванта</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">40.00 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <span class="sale">3%</span>
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product01.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">Аптечка мамы и малыша x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Галант Косметик-М ООО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">200.20 ₽</div>
+                          <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span>
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 promo_col">
+                  <div class="product_item">
+                    <!-- <span class="sale">3%</span> -->
+                    <div class="product_item_row">
+                      <div class="product_item_top">
+                        <div class="product_item_img">
+                          <img src="i/product03.png" alt="">
+                        </div>
+                        <div class="product_item_rating">
+                          <span class="stars" style="--rating: 4;"></span>
+                          <span>(248)</span>
+                        </div>
+                      </div>
+                      <div class="product_item_left">
+                        <div class="icon_left one">
+                          <div class="product_icon"><img src="i/ic-one.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p>Вмесе выгоднее</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-baby.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                        <div class="icon_left baby">
+                          <div class="product_icon"><img src="i/ic-pshsh.svg" alt=""></div>
+                          <div class="product_icon_desc">
+                            <p><b>Выбор мам</b></p>
+                            <p>На основе проведенных опросов более 75% выбрали этот продукт</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="product_item_title">З/паста Тик-Так дет с ароматом клубники (с 0 мес) 62 г x1</a>
+                    <div class="product_item_from">
+                      <span class="product_item_from_icon"><img src="i/flag.png" alt=""></span>
+                      <span class="product_item_from_name">Свобода ОАО</span>
+                    </div>
+                    <div class="product_item_price_wrap">
+                      <div class="product_item_price_row">
+                        <div class="product_item_total_price">
+                          <div class="product_item_price">74.80 ₽</div>
+                          <!-- <span class="product_item_old_price">376.50 ₽</span>
+                          <span class="product_item_discount">-163.3 ₽ (32%)</span> -->
+                        </div>
+                        <div class="product_item_counter">
+                          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product_item_btn">
+                      <button class="btn buy-btn">В корзину</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-9">
-                <div class="personal_center">
-                  <div class="personal_top">
-                    <div class="section_title">История заказов</div>
-                    <div class="order_filter">
-                      <div class="order_filter_row">
-                        <div class="order_filter_title">Фильтр:</div>
-                        <select name="" id="" class="o-filter">
-                          <option value="6">последние 6 месяцев</option>
-                          <option value="9">последние 9 месяцев</option>
-                          <option value="12">последние 12 месяцев</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="order_list">
-                    <div class="order_item">
-                      <div class="order_item_info">
-                        <div class="order_item_info_row row">
-                          <div class="col-xl-3 order_item_info_col">
-                            <div class="order_item_info_left">
-                              <div class="order_item_info_detail">
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">№ Заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">2008963402</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Дата заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">10.07.2021</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Сумма заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">923.1 ₽</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Код:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">
-                                      1234
-                                      <div class="tooltip"><span class="i-icon"></span>
-                                        <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-9 order_item_info_col">
-                            <div class="order_item_info_right">
-                              <div class="order_item_info_right_row row">
-                                <div class="col-lg-9">
-                                  <div class="order_item_info_detail">
-                                    <div class="info_detail_row row">
-                                      <div class="col-md-3">
-                                        <div class="info_detail_title">Статус:</div>
-                                      </div>
-                                      <div class="col-md-9">
-                                        <div class="info_detail_text">
-                                          <div class="meter">
-                                            <span style="width: 55%"></span>
-                                          </div>
-                                          <div class="meter_pin">
-                                            <div class="meter_pin_item">Заказ создан</div>
-                                            <div class="meter_pin_item">Готов</div>  
-                                            <div class="meter_pin_item">Выдан</div>  
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info_detail_row row">
-                                      <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                        <div class="info_detail_title">Платежный код:</div>
-                                      </div>
-                                      <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                        <div class="info_detail_text">
-                                          123456
-                                          <div class="tooltip"><span class="i-icon"></span>
-                                            <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3">
-                                  <div class="order_item_info_detail_btn">
-                                    <button class="btn btn-print"></button>
-                                    <button class="btn btn-repeat"></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для десктопа -->
-                      <div class="order_item_products">
-                        <div class="order_products_header">
-                          <div class="order_products_header_row row">
-                            <div class="col-lg-8">
-                              <div class="order_products_header_title">Наименование товара</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Количество</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Сумма</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для десктопа -->
-
-                      <!-- для мобилки -->
-                      <p class="info_detail_title">Список товаров</p>
-                      <div class="order_item_products_carousel">
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для мобилки -->
-                    </div>
-                    <div class="order_item">
-                      <div class="order_item_info">
-                        <div class="order_item_info_row row">
-                          <div class="col-xl-3 order_item_info_col">
-                            <div class="order_item_info_left">
-                              <div class="order_item_info_detail">
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">№ Заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">2008963402</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Дата заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">10.07.2021</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Сумма заказа:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">923.1 ₽</div>
-                                  </div>
-                                </div>
-                                <div class="info_detail_row row">
-                                  <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                    <div class="info_detail_title">Код:</div>
-                                  </div>
-                                  <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                    <div class="info_detail_text">
-                                      1234
-                                      <div class="tooltip"><span class="i-icon"></span>
-                                        <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-9 order_item_info_col">
-                            <div class="order_item_info_right">
-                              <div class="order_item_info_right_row row">
-                                <div class="col-lg-9">
-                                  <div class="order_item_info_detail">
-                                    <div class="info_detail_row row">
-                                      <div class="col-md-3">
-                                        <div class="info_detail_title">Статус:</div>
-                                      </div>
-                                      <div class="col-md-9">
-                                        <div class="info_detail_text">
-                                          <div class="meter">
-                                            <span style="width: 55%"></span>
-                                          </div>
-                                          <div class="meter_pin">
-                                            <div class="meter_pin_item">Заказ создан</div>
-                                            <div class="meter_pin_item">Готов</div>  
-                                            <div class="meter_pin_item">Выдан</div>  
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="info_detail_row row">
-                                      <div class="col-6 col-md-6 col-lg-4 col-xl-6">
-                                        <div class="info_detail_title">Платежный код:</div>
-                                      </div>
-                                      <div class="col-6 col-md-6 col-lg-8 col-xl-6">
-                                        <div class="info_detail_text">
-                                          123456
-                                          <div class="tooltip"><span class="i-icon"></span>
-                                            <span class="tooltiptext">Код необходимый для получения товара в аптеке</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-3">
-                                  <div class="order_item_info_detail_btn">
-                                    <button class="btn btn-print"></button>
-                                    <button class="btn btn-repeat"></button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- для десктопа -->
-                      <div class="order_item_products">
-                        <div class="order_products_header">
-                          <div class="order_products_header_row row">
-                            <div class="col-lg-8">
-                              <div class="order_products_header_title">Наименование товара</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Количество</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_products_header_title">Сумма</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="order_item_product">
-                          <div class="order_item_product_row row">
-                            <div class="col-lg-8">
-                              <div class="order_item_product_info">
-                                <div class="order_item_product_info_row row">
-                                  <div class="col-lg-3">
-                                    <div class="order_item_product_img">
-                                      <img src="i/order-product.png" alt="">
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-9">
-                                    <div class="order_item_product_title">
-                                      <span><b>Доппельгерц Актив от А до Цинка табл x30</b></span>
-                                      <span>1234 Виаминно минеральный комплекс</span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_sum">2</div>
-                            </div>
-                            <div class="col-lg-2">
-                              <div class="order_item_product_price">229,8 ₽</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для десктопа -->
-
-                      <!-- для мобилки -->
-                      <p class="info_detail_title">Список товаров</p>
-                      <div class="order_item_products_carousel">
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                        <div class="order_product">
-                          <div class="order_product_img"><img src="i/product02.png" alt=""></div>
-                          <a href="#" class="order_product_title">Бальзам д/губ Мое Солнышко дет ваниль 2,8 г x1</a>
-                          <div class="order_product_bottom">
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Количество:</div>
-                              <div class="order_product_col_text">2уп.</div>
-                            </div>
-                            <div class="order_product_row">
-                              <div class="order_product_col_title">Сумма:</div>
-                              <div class="order_product_col_text">
-                                <div class="total_price">40.00 ₽</div>
-                                <div class="detail_price">477.30 Р/уп.</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="order_product_btn">
-                            <button class="btn buy-btn">В корзину</button>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- /для мобилки -->
-                    </div>
-
-                    
-                  </div>
-                </div>
+              <div class="pagenation_box">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="prev"></span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="next"></span>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
       <div class="section section_form">
