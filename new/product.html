@@ -416,6 +416,11 @@
                 <div class="col-lg-6">
                   <div class="card_image">
                     <span class="sale">3%</span>
+                    <span class="favorite-icon">
+                      <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.912 12.4719L14.7507 22.7041C14.5626 22.8936 14.3074 23 14.0414 23C13.7753 23 13.5201 22.8936 13.332 22.7041L2.90987 12.2092C2.2835 11.5784 1.79132 10.8258 1.46336 9.99713C1.1354 9.16849 0.978544 8.28125 1.00236 7.38955C1.02617 6.49784 1.23015 5.62037 1.60186 4.81067C1.97357 4.00098 2.50521 3.27603 3.16434 2.68007C5.7882 0.300835 9.89568 0.671758 12.3924 3.18591L14.0414 4.84639L15.9512 2.9232C16.5776 2.29246 17.3251 1.79684 18.148 1.46659C18.9709 1.13635 19.852 0.978394 20.7375 1.00237C21.623 1.02635 22.4944 1.23176 23.2985 1.60607C24.1025 1.98037 24.8225 2.51572 25.4143 3.17946C27.777 5.82163 27.4087 9.95779 24.912 12.4719Z" stroke="#1274B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
                     <img src="i/card_image.png" alt="">
                   </div>
                 </div>
@@ -453,11 +458,19 @@
                         <div class="short_info_item_text">Забрать можно сегодня</div>
                       </div>
                     </div>
+                    <div class="info_link"><a href="#desc">Перейти к описанию</a></div>
                     <div class="card_info_price">
                       <div class="product_total_price">
                         <div class="product_price">213.20 ₽</div>
                         <span class="product_old_price">376.50 ₽</span>
                         <span class="product_discount">-163.3 ₽ (32%)</span>
+                      </div>
+                      <div class="mobil_counter">
+                        <div class="product_counter">
+                          <span class="down" onclick="decreaseCount(event, this)">-</span>
+                          <input type="text" class="count_input" value="1">
+                          <span class="up" onclick="increaseCount(event, this)">+</span>
+                        </div>
                       </div>
                     </div>
                     <div class="card_info_btn">
@@ -481,6 +494,11 @@
                   <div class="col-xl-3 col-lg-4 promo_col">
                     <div class="product_item">
                       <span class="sale">3%</span>
+                      <span class="favorite-icon">
+                        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.912 12.4719L14.7507 22.7041C14.5626 22.8936 14.3074 23 14.0414 23C13.7753 23 13.5201 22.8936 13.332 22.7041L2.90987 12.2092C2.2835 11.5784 1.79132 10.8258 1.46336 9.99713C1.1354 9.16849 0.978544 8.28125 1.00236 7.38955C1.02617 6.49784 1.23015 5.62037 1.60186 4.81067C1.97357 4.00098 2.50521 3.27603 3.16434 2.68007C5.7882 0.300835 9.89568 0.671758 12.3924 3.18591L14.0414 4.84639L15.9512 2.9232C16.5776 2.29246 17.3251 1.79684 18.148 1.46659C18.9709 1.13635 19.852 0.978394 20.7375 1.00237C21.623 1.02635 22.4944 1.23176 23.2985 1.60607C24.1025 1.98037 24.8225 2.51572 25.4143 3.17946C27.777 5.82163 27.4087 9.95779 24.912 12.4719Z" stroke="#1274B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
                       <div class="product_item_row">
                         <div class="product_item_top">
                           <div class="product_item_img">
@@ -521,6 +539,11 @@
                   <div class="col-xl-3 col-lg-4 promo_col">
                     <div class="product_item">
                       <!-- <span class="sale">3%</span> -->
+                      <span class="favorite-icon">
+                        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.912 12.4719L14.7507 22.7041C14.5626 22.8936 14.3074 23 14.0414 23C13.7753 23 13.5201 22.8936 13.332 22.7041L2.90987 12.2092C2.2835 11.5784 1.79132 10.8258 1.46336 9.99713C1.1354 9.16849 0.978544 8.28125 1.00236 7.38955C1.02617 6.49784 1.23015 5.62037 1.60186 4.81067C1.97357 4.00098 2.50521 3.27603 3.16434 2.68007C5.7882 0.300835 9.89568 0.671758 12.3924 3.18591L14.0414 4.84639L15.9512 2.9232C16.5776 2.29246 17.3251 1.79684 18.148 1.46659C18.9709 1.13635 19.852 0.978394 20.7375 1.00237C21.623 1.02635 22.4944 1.23176 23.2985 1.60607C24.1025 1.98037 24.8225 2.51572 25.4143 3.17946C27.777 5.82163 27.4087 9.95779 24.912 12.4719Z" stroke="#1274B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
                       <div class="product_item_row">
                         <div class="product_item_top">
                           <div class="product_item_img">
@@ -568,6 +591,11 @@
                   <div class="col-xl-3 col-lg-4 promo_col">
                     <div class="product_item">
                       <span class="sale">3%</span>
+                      <span class="favorite-icon">
+                        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.912 12.4719L14.7507 22.7041C14.5626 22.8936 14.3074 23 14.0414 23C13.7753 23 13.5201 22.8936 13.332 22.7041L2.90987 12.2092C2.2835 11.5784 1.79132 10.8258 1.46336 9.99713C1.1354 9.16849 0.978544 8.28125 1.00236 7.38955C1.02617 6.49784 1.23015 5.62037 1.60186 4.81067C1.97357 4.00098 2.50521 3.27603 3.16434 2.68007C5.7882 0.300835 9.89568 0.671758 12.3924 3.18591L14.0414 4.84639L15.9512 2.9232C16.5776 2.29246 17.3251 1.79684 18.148 1.46659C18.9709 1.13635 19.852 0.978394 20.7375 1.00237C21.623 1.02635 22.4944 1.23176 23.2985 1.60607C24.1025 1.98037 24.8225 2.51572 25.4143 3.17946C27.777 5.82163 27.4087 9.95779 24.912 12.4719Z" stroke="#1274B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
                       <div class="product_item_row">
                         <div class="product_item_top">
                           <div class="product_item_img">
@@ -608,6 +636,11 @@
                   <div class="col-xl-3 col-lg-4 promo_col">
                     <div class="product_item">
                       <!-- <span class="sale">3%</span> -->
+                      <span class="favorite-icon">
+                        <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.912 12.4719L14.7507 22.7041C14.5626 22.8936 14.3074 23 14.0414 23C13.7753 23 13.5201 22.8936 13.332 22.7041L2.90987 12.2092C2.2835 11.5784 1.79132 10.8258 1.46336 9.99713C1.1354 9.16849 0.978544 8.28125 1.00236 7.38955C1.02617 6.49784 1.23015 5.62037 1.60186 4.81067C1.97357 4.00098 2.50521 3.27603 3.16434 2.68007C5.7882 0.300835 9.89568 0.671758 12.3924 3.18591L14.0414 4.84639L15.9512 2.9232C16.5776 2.29246 17.3251 1.79684 18.148 1.46659C18.9709 1.13635 19.852 0.978394 20.7375 1.00237C21.623 1.02635 22.4944 1.23176 23.2985 1.60607C24.1025 1.98037 24.8225 2.51572 25.4143 3.17946C27.777 5.82163 27.4087 9.95779 24.912 12.4719Z" stroke="#1274B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
                       <div class="product_item_row">
                         <div class="product_item_top">
                           <div class="product_item_img">
@@ -710,7 +743,7 @@
                 </div>
               </div>
             </div>
-            <div class="section_description">
+            <div class="section_description" id="desc">
               <div class="section_description_item">
                 <div class="section_description_item_title">Описание</div>
                 <div class="section_description_item_text">
@@ -786,9 +819,9 @@
 					</div>
 					<div class="col-lg-3 col-xl-2 footer_col_menu">
 						<div class="footer_menu">
-							<a href="#" class="footer_menu-item">Контакты</a>
-							<a href="#" class="footer_menu-item">Лицензия</a>
-							<a href="#" class="footer_menu-item">Вопрос-ответ</a>
+							<a href="/new/contacts.html" class="footer_menu-item">Контакты</a>
+							<a href="/new/license.html" class="footer_menu-item">Лицензия</a>
+							<a href="/new/faq.html" class="footer_menu-item">Вопрос-ответ</a>
 							<a href="#" class="footer_menu-item">Вакансии</a>
 						</div>
 					</div>
@@ -815,10 +848,10 @@
 					</div>
 				</div>
         <div class="footer_mobil">
-          <a href="#" class="footer_mobil_link -contacts">
+          <a href="/new/contacts.html" class="footer_mobil_link -contacts">
             Контакты
           </a>
-          <a href="#" class="footer_mobil_link -policy">Политика конфиденциальности</a>
+          <a href="/new/policy.html" class="footer_mobil_link -policy">Политика конфиденциальности</a>
           <div class="copy">© 2021 Все права защищены</div>
         </div>
 		</footer>
